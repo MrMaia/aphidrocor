@@ -25,14 +25,14 @@ include("conexao.php");
     <div class="bloco1 p-5 rounded-4 m-5">
         <h3 class="mb-5">Configurações de Usuários</h3>
         <div class="d-flex flex-column gap-3">
-          <a href="cadastro_us.php"><button class = "btn btn-primary">Criar usuário</button></a>
-          <a href="Listar_us.php"><button class = "btn btn-primary">Listar usuário</button></a>    
+          <a href="CadastrarUsuario.php"><button class = "btn btn-primary">Criar usuário</button></a>
+          <a href="ListarUsuario.php"><button class = "btn btn-primary">Listar usuário</button></a>    
         </div>
     </div>
     <div class="bloco2 p-5 rounded-4">
         <h3 class="mb-5">Configurações de Dados</h3>
         <div class="d-flex flex-column gap-3">
-          <a href="listar_dados.php"><button class = "btn btn-primary">Listar Dados</button></a>
+          <a href="ListarDados.php"><button class = "btn btn-primary">Listar Dados</button></a>
           <a href="exportarDados.php"><button class = "btn btn-primary">Exportar dados(csv)</button></a>
         </div>
     </div>

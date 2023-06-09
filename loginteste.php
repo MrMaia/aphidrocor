@@ -94,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <style>
   body{
     background-image: url("assets/imgs/Hidrocor_Background.png");
-  }
+    }
 </style>
 <body>
     <form class="formulario" method="POST">
@@ -107,10 +107,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <input type="hidden" name="permissao" value="1">
             <button type="submit" class="button" id="entrar">ENTRAR</button>
             <nav class="contatos">
-                <a href="https://www.instagram.com/apac_oficial/"><img class="icone" src="assets/imgs/icones/icone_insta.png" alt="Instagram"></a>
-                <a href="https://www.youtube.com/c/apacoficial"><img class="icone" src="assets/imgs/icones/icone_youtube.png" alt="Youtube"></a>
+                <a href="https://www.instagram.com/apac_oficial/" target="_blank"><img class="icone" src="assets/imgs/icones/icone_insta.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/c/apacoficial" target="_blank"><img class="icone" src="assets/imgs/icones/icone_youtube.png" alt="Youtube"></a>
                 <a href="#"><img class="icone" src="assets/imgs/icones/icone_email.png" alt="E-mail"></a>
-                <a href="#"><img class="icone" src="assets/imgs/icones/icone_telefone.png" alt="Whatsapp"></a>
+                <a href="https://wa.me/5581984941580" target="_blank"><img class="icone" src="assets/imgs/icones/icone_telefone.png" alt="Whatsapp"></a>
             </nav>
         </div>
         <div class="formulario_right" style="justify-content: flex-start;">

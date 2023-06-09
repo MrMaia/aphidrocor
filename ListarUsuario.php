@@ -2,9 +2,8 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listar Dados</title>
+    <title>Lista de Usuários</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -105,7 +104,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Listar dados</h1>
+        <h1>Lista de Usuários</h1>
 
         <form method="POST" action="">
             <input type="text" name="search" placeholder="Digite o nome do usuário" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>">
@@ -115,8 +114,7 @@
         <?php
         include('conexao.php');
 
-        $sql = "SELECT u.nome, d.nivel_chuva, d.nivel_rio, d.nivel_reservatorio, d.data_hora 
-        FROM usuario u INNER JOIN dados d ON (d.id = u.id)";
+        $sql = "SELECT * FROM usuario";
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $search = $_POST["search"];
@@ -130,22 +128,20 @@
             echo "<table>
                     <tr>
                         <th>Nome</th>
-                        <th>Nível Chuva</th>
-                        <th>Nivel Rio</th>
-                        <th>Nível Reservatório</th>
-                        <th>Data Hora</th>
+                        <th>Telefone</th>
+                        <th>Setor</th>
+                        <th>Permissão</th>
                         <th>Ações</th>
                     </tr>";
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<tr>
                         <td>" . $row["nome"] . "</td>
-                        <td>" . $row["nivel_chuva"] . "</td>
-                        <td>" . $row["nivel_rio"] . "</td>
-                        <td>" . $row["nivel_reservatorio"] . "</td>
-                        <td>" . $row["data_hora"] . "</td>
+                        <td>" . $row["telefone"] . "</td>
+                        <td>" . $row["setor"] . "</td>
+                        <td>" . $row["permissao"] . "</td>
                         <td>
-                            <a href='editar_usuario.php?id=" . $row["nome"] . "' class='button' style='margin-right: 10px;'>Editar</a>
-                            <a href='excluir_usuario.php?id=" . $row["nome"] . "' class='button' onclick='return confirm(\"Tem certeza que deseja excluir este dado?\")'>Excluir</a>
+                            <a href='EditarUsuario.php?id=" . $row["id"] . "' class='button'>Editar</a>
+                            <a href='DeletarUsuario.php?id=" . $row["id"] . "' class='button' onclick='return confirm(\"Tem certeza que deseja excluir este usuário?\")'>Excluir</a>
                         </td>
                     </tr>";
             }
