@@ -95,11 +95,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   body{
     background-image: url("assets/imgs/Hidrocor_Background.png");
     }
-  .formulario_titulo{
+  .formulario_titulo, .form_label, .button{
     font-family: 'Bebas Neue', sans-serif;
   }
   .form_input1, .form_input2{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
   }
 </style>
 <body>
@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <nav class="contatos">
                 <a href="https://www.instagram.com/apac_oficial/" target="_blank"><img class="icone" src="assets/imgs/icones/icone_insta.png" alt="Instagram"></a>
                 <a href="https://www.youtube.com/c/apacoficial" target="_blank"><img class="icone" src="assets/imgs/icones/icone_youtube.png" alt="Youtube"></a>
-                <a href="#"><img class="icone" src="assets/imgs/icones/icone_email.png" alt="E-mail"></a>
+                <a href="mailto:teste@hotmail.com"><img class="icone" src="assets/imgs/icones/icone_email.png" alt="E-mail"></a>
                 <a href="https://wa.me/5581984941580" target="_blank"><img class="icone" src="assets/imgs/icones/icone_telefone.png" alt="Whatsapp"></a>
             </nav>
         </div>

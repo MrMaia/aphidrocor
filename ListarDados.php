@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+            background-image: url("assets/imgs/Hidrocor_Background.png");
         }
 
         h1 {
@@ -148,7 +149,7 @@
                         <td>" . $row["data_hora"] . "</td>
                         <td>
                             <a href='EditarDados.php?id=" . $row["nome"] . "' class='button' style='margin-right: 10px;'>Editar</a>
-                            <a href='DeletarDados.php?id=" . $row["nome"] . "' class='button' onclick='return confirm(\"Tem certeza que deseja excluir este dado?\")'>Excluir</a>
+                            <a href='DeletarDados.php?id=" . $row["nome"] . "' class='button' >Excluir</a>
                         </td>
                     </tr>";
             }

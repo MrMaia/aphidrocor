@@ -16,6 +16,11 @@ include("conexao.php");
     <link rel="stylesheet" href="/CURSOAPAC2/assets/css/paineladmin.css">
     <title>Apac - Administração</title>
 </head>
+<style>
+  body{
+    background-image: url("assets/imgs/Hidrocor_Background.png");
+    }
+</style>
 <body>
 <h1 align='center'>Bem vindo ao sistema, <br><?php echo isset($_SESSION['nome']) 
 ? $_SESSION['nome'] : '';?></h1>
