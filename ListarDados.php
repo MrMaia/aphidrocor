@@ -16,9 +16,10 @@
         h1 {
             text-align: center;
             padding: 20px;
-            background-color: #4CAF50;
+            background-color: #5990ca;
             color: white;
             margin: 0;
+            border-radius: 15px;
         }
 
         form {
@@ -33,12 +34,13 @@
             border: none;
             border-radius: 4px;
             width: 300px;
+            background-color: #cccccc;
         }
 
         button[type="submit"] {
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #4CAF50;
+            background-color: #5990ca;
             color: white;
             border: none;
             border-radius: 4px;
@@ -64,7 +66,7 @@
 
         .button {
             padding: 5px 10px;
-            background-color: #4CAF50;
+            background-color: #5990ca;
             color: white;
             border: none;
             border-radius: 4px;
@@ -73,7 +75,7 @@
         }
 
         .button:hover {
-            background-color: #45a049;
+            background-color: #6fa2d9;
         }
 
         .button:active {
@@ -86,6 +88,7 @@
             padding: 20px;
             background-color: white;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
         }
 
         .message {

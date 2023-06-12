@@ -10,14 +10,16 @@
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+            background-image: url("assets/imgs/Hidrocor_Background.png");
         }
 
         h1 {
             text-align: center;
             padding: 20px;
-            background-color: #4CAF50;
+            background-color: #5990ca;
             color: white;
             margin: 0;
+            border-radius: 15px;
         }
 
         form {
@@ -32,12 +34,13 @@
             border: none;
             border-radius: 4px;
             width: 300px;
+            background-color: #cccccc;
         }
 
         button[type="submit"] {
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #4CAF50;
+            background-color: #5990ca;
             color: white;
             border: none;
             border-radius: 4px;
@@ -63,7 +66,7 @@
 
         .button {
             padding: 5px 10px;
-            background-color: #4CAF50;
+            background-color: #5990ca;
             color: white;
             border: none;
             border-radius: 4px;
@@ -72,7 +75,7 @@
         }
 
         .button:hover {
-            background-color: #45a049;
+            background-color: #6fa2d9;
         }
 
         .button:active {
@@ -85,6 +88,7 @@
             padding: 20px;
             background-color: white;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
         }
 
         .message {
@@ -141,7 +145,7 @@
                         <td>" . $row["permissao"] . "</td>
                         <td>
                             <a href='EditarUsuario.php?id=" . $row["id"] . "' class='button'>Editar</a>
-                            <a href='DeletarUsuario.php?id=" . $row["id"] . "' class='button' onclick='return confirm(\"Tem certeza que deseja excluir este usuário?\")'>Excluir</a>
+                            <a href='DeletarUsuario.php?id=" . $row["id"] . "' class='button'>Excluir</a>
                         </td>
                     </tr>";
             }

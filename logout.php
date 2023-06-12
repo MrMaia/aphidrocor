@@ -4,7 +4,7 @@ session_start();
 
 session_destroy();
 
-header("Location: loginteste.php");
+header("Location: login.php");
 exit;
 
 ?>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include('conexao.php');
 session_start();
 
@@ -87,21 +87,41 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apac - Login</title>
+    <meta name="description" content="Hidrocor - Coleta e organização de dados hidrometeorológicos da Agência Pernambucana de Águas e Clima">
+    <title>Hidrocor - Login</title>
     <link rel="stylesheet" href="assets/css/login.css">
 </head>
+<style>
+  body{
+    background-image: url("assets/imgs/Hidrocor_Background.png");
+    }
+  .formulario_titulo{
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .form_input1, .form_input2{
+    font-family: 'Roboto', sans-serif;
+  }
+</style>
 <body>
-    <div class="forms">
-        <form class="formulario" method="POST" action="">
-            <h1 class="form_titulo">Faça seu Login</h1>
-            <label class="form_label" for="user_telefone"></label>
-            <input class="form_input" type="text" placeholder="Insira seu telefone" id="user_telefone" name = "telefone"required>
-            <label class="form_label" for="user_pass"></label>
-            <input class="form_input" type="password" placeholder="Insira sua Senha" id="user_pass" name = "senha"required>
+    <form class="formulario" method="POST">
+        <div class="formulario_left">
+            <h1 class="formulario_titulo">LOGIN</h1>
+            <label class="form_label" for="user_telefone">TELEFONE</label>
+            <input class="form_input1" type="text" placeholder="Informe seu telefone" id="user_telefone" name= "telefone" required>
+            <label class="form_label" for="user_pass">SENHA</label>
+            <input class="form_input2" type="password" placeholder="Informe sua senha" id="user_pass" name="senha" required>
             <input type="hidden" name="permissao" value="1">
-            <button type="submit" class="button" id="entrar">Entrar</button>
-            <img class="form_img" src="assets/imgs/Logo_apac.png" alt="Logo Apac">
-        </form>
-    </div>
+            <button type="submit" class="button" id="entrar">ENTRAR</button>
+            <nav class="contatos">
+                <a href="https://www.instagram.com/apac_oficial/" target="_blank"><img class="icone" src="assets/imgs/icones/icone_insta.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/c/apacoficial" target="_blank"><img class="icone" src="assets/imgs/icones/icone_youtube.png" alt="Youtube"></a>
+                <a href="#"><img class="icone" src="assets/imgs/icones/icone_email.png" alt="E-mail"></a>
+                <a href="https://wa.me/5581984941580" target="_blank"><img class="icone" src="assets/imgs/icones/icone_telefone.png" alt="Whatsapp"></a>
+            </nav>
+        </div>
+        <div class="formulario_right" style="justify-content: flex-start;">
+            <img class="banner_img" src="assets/imgs/Hidrocor Banner.png" alt="Banner Hidrocor">
+        </div>
+    </form>
 </body>
 </html>

@@ -34,17 +34,17 @@ mysqli_close($conn);
 <body>
     <main>
         <div class="forms">
-            <form method="POST" class="formulario" action="cadastro_us.php">
+            <form method="POST" class="formulario" action="CadastrarUsuario.php">
                 <h1 class="form_titulo">Criar Usuário</h1>
 
                 <label class="form_label" for="nome"></label>
-                <input class="form_input" type="text" placeholder="Nome Completo" name="nome" id = "nome" >
+                <input class="form_input" type="text" placeholder="Nome Completo" name="nome" id = "nome" required>
                 <label class="form_label" for="senha"></label>
-                <input class="form_input" type="password" placeholder="Crie uma Senha" name="senha" id = "senha">
+                <input class="form_input" type="password" placeholder="Crie uma Senha" name="senha" id = "senha"required>
                 <label class="form_label" for="telefone"></label>
-                <input class="form_input" type="number" placeholder="Número de Telefone" name="telefone" id = "telefone" >
+                <input class="form_input" type="number" placeholder="Número de Telefone" name="telefone" id = "telefone" required>
                 <label for="permissao">Escolha a permissão:</label>
-                <select class="form-select" aria-label="Default select example" name="setor" id="setor"  >
+                <select class="form-select" aria-label="Default select example" name="setor" id="setor" required>
                     <option selected></option>
                     <option value="nivel rio">Nível do Rio</option>
                     <option value="Volume da Chuva">Volume da Chuva</option>
@@ -52,14 +52,14 @@ mysqli_close($conn);
                     <option value="Todos os campos">Todos os campos</option>
                 </select>
                 <label for="permissao">Escolha o Tipo de acesso:</label>
-                <select class="form-select" aria-label="Default select example" name="permissao" id="permissao"  >
+                <select class="form-select" aria-label="Default select example" name="permissao" id="permissao" required>
                     <option selected></option>
                     <option value="1">Administrador</option>
                     <option value="0">Usuário</option>
                 </select>
                 <button type="submit" class="button" name = "enviar">Criar usuário</button>
                 <button><a href="paineladmin.php">Voltar</button>
-                <img class="form_img" src="/CURSOAPAC2/assets/imgs/Logo_apac.png" alt="Logo Apac">
+                <img class="form_img" src="assets/imgs/Logo_apac.png" alt="Logo Apac">
             </form>
         </div>
     </main>
