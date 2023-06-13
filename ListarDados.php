@@ -11,7 +11,6 @@
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
-            background-image: url("assets/imgs/Hidrocor_Background.png");
         }
 
         h1 {
@@ -138,7 +137,6 @@
                         <th>Nivel Rio</th>
                         <th>Nível Reservatório</th>
                         <th>Data Hora</th>
-                        <th>Ações</th>
                     </tr>";
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<tr>
@@ -147,15 +145,11 @@
                         <td>" . $row["nivel_rio"] . "</td>
                         <td>" . $row["nivel_reservatorio"] . "</td>
                         <td>" . $row["data_hora"] . "</td>
-                        <td>
-                            <a href='EditarDados.php?id=" . $row["nome"] . "' class='button' style='margin-right: 10px;'>Editar</a>
-                            <a href='DeletarDados.php?id=" . $row["nome"] . "' class='button' >Excluir</a>
-                        </td>
                     </tr>";
             }
             echo "</table>";
         } else {
-            echo "<p class='message'>Nenhum usuário encontrado.</p>";
+            echo "<p class='message'>Nenhum dado encontrado.</p>";
         }
 
         mysqli_close($conn);

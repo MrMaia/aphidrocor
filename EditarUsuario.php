@@ -13,6 +13,7 @@ if (isset($_GET['id'])) {
     $telefone = $row['telefone'];
     $setor = $row['setor'];
     $permissao = $row['permissao'];
+    $mensagem = '';
 }
 
 if (isset($_POST['enviar'])) {
@@ -26,7 +27,7 @@ if (isset($_POST['enviar'])) {
         $sql = "UPDATE usuario SET nome='$nome', senha='$senha', telefone='$telefone', setor='$setor', permissao='$permissao' WHERE id='$id'";
 
         if (mysqli_query($conn, $sql)) {
-            $mensagem =  "Dados atualizados com sucesso";
+            echo "Dados atualizados com sucesso!!!";
         } else {
             $mensagem =  "Erro ao atualizar dados: " . mysqli_error($conn);
         }

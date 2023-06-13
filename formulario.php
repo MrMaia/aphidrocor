@@ -47,7 +47,7 @@ if(isset($_POST['enviar']))
 
         if(isset($_POST["nivelReservatorio"]))
         {
-            $nivelReservatorio = $_POST["nivel_reservatorio"];
+            $nivelReservatorio = $_POST["nivelReservatorio"];
         }
 
         $sql = "INSERT INTO dados(nivel_rio, nivel_chuva, nivel_reservatorio,id)
@@ -82,7 +82,7 @@ mysqli_close($conn);
             <label class="form_label <?php echo $volumeChuvaDisabled ?>" for="volume_chuva"></label>
             <input class="form_input" type="text" placeholder="Insira o volume da chuva" id="user_pass" name = "volume_chuva" <?php echo $volumeChuvaDisabled ?>>
             <label class="form_label <?php echo $nivelReservatorioDisabled ?>" for="nivel_reservatorio"></label>
-            <input class="form_input" type="text" placeholder="Insira o nível do reservatório" id="user_pass" name = "nivel_reservatorio" <?php echo $nivelReservatorioDisabled ?>>
+            <input class="form_input" type="text" placeholder="Insira o nível do reservatório" id="user_pass" name="nivelReservatorio" <?php echo $nivelReservatorioDisabled ?>>
             <button type="submit" class="button" name ="enviar">Enviar</button>
             <br>
             <button type="submit" name="logout"><a href="logout.php">Sair</button>

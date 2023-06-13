@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           }
         }
       } else {
-        echo "Usuário ou senha inválidos.";
+        echo "Telefone ou senha inválidos.";
       }
     }
     
