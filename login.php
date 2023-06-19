@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
 
           if ($permissao == 0) {
-            header("Location: formulario.php");
+            header("Location: dados.php");
             exit;
           } elseif ($permissao == 1) {
             header("Location: paineladmin.php");
