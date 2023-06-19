@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
 
           if ($permissao == 0) {
-            header("Location: dados.php");
+            header("Location: formulario.php");
             exit;
           } elseif ($permissao == 1) {
             header("Location: paineladmin.php");
@@ -116,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <a href="https://www.instagram.com/apac_oficial/" target="_blank"><img class="icone" src="assets/imgs/icones/icone_insta.png" alt="Instagram"></a>
                 <a href="https://www.youtube.com/c/apacoficial" target="_blank"><img class="icone" src="assets/imgs/icones/icone_youtube.png" alt="Youtube"></a>
                 <a href="mailto:teste@hotmail.com"><img class="icone" src="assets/imgs/icones/icone_email.png" alt="E-mail"></a>
-                <a href="https://wa.me/5581984941580" target="_blank"><img class="icone" src="assets/imgs/icones/icone_telefone.png" alt="Whatsapp"></a>
+                <a href="https://wa.me/5581984941580" target="_blank"><img class="icone" src="assets/imgs/icones/icone_wpp.png" alt="Whatsapp"></a>
             </nav>
         </div>
         <div class="formulario_right" style="justify-content: flex-start;">
