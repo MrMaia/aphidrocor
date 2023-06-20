@@ -1,0 +1,3 @@
+trocar telefone por numero de posto
+editar dado
+colocar opção de inserir dados de outros dias

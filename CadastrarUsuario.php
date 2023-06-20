@@ -209,7 +209,7 @@ mysqli_close($conn);
                 <input class="form_input" type="number" placeholder="Número de Telefone" name="telefone" id="telefone" required>
                 <label class="form_label" for="senha">SENHA</label>
                 <input class="form_input" type="password" placeholder="Crie uma Senha" name="senha" id="senha" required>
-                <label class="permissao_label" for="permissao">ESCOLHA A PERMISSÃO</label>
+                <label class="permissao_label" for="permissao">ESCOLHA O SETOR</label>
                 <select class="form-select" name="setor" id="setor" required>
                     <option selected></option>
                     <option value="nivel rio">Nível do Rio</option>
@@ -217,7 +217,7 @@ mysqli_close($conn);
                     <option value="Nível do Reservatório">Nível do Reservatório</option>
                     <option value="Todos os campos">Todos os campos</option>
                 </select>
-                <label class="acesso_label" for="permissao">TIPO DE ACESSO</label>
+                <label class="acesso_label" for="permissao">ESCOLHA O ACESSO</label>
                 <select class="form-select" name="permissao" id="permissao" required>
                     <option selected></option>
                     <option value="0">Usuário</option>
